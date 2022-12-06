@@ -20,7 +20,7 @@ c.url.searchengines = {
     'go': 'https://www.google.com/search?q={}',
     'yt': 'https://www.youtube.com/results?search_query={}',
     'aw': 'https://wiki.archlinux.org/?search={}',
-    'xb': 'https://voidlinux.org/packages/?arch=x86_64&q={}',
+    'pm': 'https://voidlinux.org/packages/?arch=x86_64&q={}',
 }
 
 # Text color of the completion widget. May be a single color to use for
@@ -158,7 +158,7 @@ c.colors.tabs.pinned.selected.even.bg = '#282c34'
 # font setting, it's replaced with the fonts listed here. If set to an
 # empty value, a system-specific monospace default is used.
 # Type: List of Font, or Font
-c.fonts.default_family = '"FiraCode"'
+c.fonts.default_family = 'monospace'
 
 # Default font size to use. Whenever "default_size" is used in a font
 # setting, it's replaced with the size listed here. Valid values are
@@ -169,17 +169,14 @@ c.fonts.default_size = '11pt'
 
 # Font used in the completion widget.
 # Type: Font
-c.fonts.completion.entry = '11pt "FiraCode"'
+c.fonts.completion.entry = 'default_size default_family'
 
 # Font used for the debugging console.
 # Type: Font
-c.fonts.debug_console = '11pt "FiraCode"'
+c.fonts.debug_console = 'default_size default_family'
 
-# Font used for prompts.
-# Type: Font
-c.fonts.prompts = 'default_size sans-serif'
+c.fonts.prompts = 'default_size default_family'
 
-# Font used in the statusbar.
-# Type: Font
-c.fonts.statusbar = '11pt "FiraCode"'
+c.fonts.statusbar = 'default_size default_family'
+
 

@@ -11,25 +11,8 @@
             padding: 0;
             margin: 0;
         }
-        p {
-            font-size: 3em;
-            color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
     </style>
 </head>
 <body>
-    <script>
-        let textElement = document.createElement("p")
-        document.body.append(textElement)
-        function writeDate() {
-            let date = new Date()
-            textElement.innerHTML = date.toString()
-        }
-        setInterval(writeDate, 1000)
-    </script>
 </body>
 </html>
