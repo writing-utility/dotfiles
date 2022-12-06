@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# monitors resoluation
+monitor1="$(xrandr -q | grep VGA | cut -d " " -f1 | sed -n 1p)"
+#monitor2="$(xrandr -q | grep VGA | cut -d " " -f1 | sed -n 2p)"
+xrandr --newmode 1360x768_60.00   84.75  1360 1432 1568 1776  768 771 781 798 -hsync +vsync
+xrandr --addmode $monitor1 "1360x768_60.00"
+xrandr --output $monitor1 --mode "1360x768_60.00"
+#xrandr --output $monitor1 --mode 1360x768_60.00 --pos 0x0 --rotate normal --output $monitor2 --mode 1024x768 --pos 1360x0 --rotate normal
+
+# keyboard layout
+setxkbmap fr
+
+#ADD auto-mount /dev/sda5
