@@ -80,6 +80,11 @@ cmd extract ${{
     esac
 }}
 
+cmd mkdir ${{
+    set -f
+    mkdir $1
+}}
+
 # compress current file or selected files with tar and gunzip
 cmd tar ${{
     set -f

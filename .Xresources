@@ -1,7 +1,8 @@
 ! special
 *.foreground:   #7f8388
 *.background:   #1c1d21
-*.cursorColor:  #e0dcdc
+!*.cursorColor:  #e0dcdc
+*.font:         monospace:size=11
 
 ! black
 *.color0:       #0a0707
@@ -34,6 +35,5 @@
 ! white
 *.color7:       #e5e1e2
 *.color15:      #558881
-
 
 xterm*scrollBar : false

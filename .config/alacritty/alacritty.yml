@@ -11,7 +11,7 @@ scrolling:
   multiplier: 3
 font:
   normal:
-    family: FiraCode
+    family: monospace 
     style: Regular
   size: 12.0
 colors:

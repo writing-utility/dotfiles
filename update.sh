@@ -3,14 +3,17 @@
 ## From $HOME
 list=".zprofile .zshrc .xprofile .xinitrc .Xresources"
 for i in $list; do
-    cp -r "$HOME/$i" "$HOME/Repos/dotfiles" || exit 1
+    cp -r "$HOME/$i" "$HOME/Repositories/dotfiles" || exit 1
 done
 
 ## From $HOME/.config
 list="zathura dunst qutebrowser nvim alacritty mpv lf autostart calcurse jrnl"
 for i in $list; do
-    cp -r "$HOME/.config/$i" "$HOME/Repos/dotfiles/.config" || exit 1
+    cp -r "$HOME/.config/$i" "$HOME/Repositories/dotfiles/.config" || exit 1
 done
+
+## From $HOME/.local
+### applications
 
 ## Upload to git repo
 git add .

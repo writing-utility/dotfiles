@@ -11,4 +11,6 @@ xrandr --output $monitor1 --mode "1360x768_60.00"
 # keyboard layout
 setxkbmap fr
 
+xrdb "$HOME/.Xresources"
+
 #ADD auto-mount /dev/sda5
